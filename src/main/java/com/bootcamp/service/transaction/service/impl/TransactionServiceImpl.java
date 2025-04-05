@@ -8,6 +8,7 @@ import com.bootcamp.service.transaction.service.TransactionService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Service
@@ -25,5 +26,10 @@ public class TransactionServiceImpl implements TransactionService {
                 .doOnSuccess(transaction -> log.info("Transaction saved"))
                 .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
                 .onErrorResume(Mono::error);
+    }
+
+    @Override
+    public Flux<TransactionRS> getTransactions() {
+        return Flux.empty();
     }
 }
