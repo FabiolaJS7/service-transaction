@@ -143,3 +143,6 @@ components:
         observation:
           type: string
           description: observations
+        dateOfTransaction:
+          type: string
+          format: date

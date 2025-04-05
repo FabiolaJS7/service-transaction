@@ -4,6 +4,7 @@ import com.bootcamp.service.transaction.model.Transaction;
 import com.bootcamp.service.transaction.model.TransactionRQ;
 import com.bootcamp.service.transaction.model.TransactionRS;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 @Mapper
@@ -14,6 +15,7 @@ public interface TransactionMapper {
     // Mapea TransactionRQ a Transaction
     Transaction toTransactionOfTransactionRQ(TransactionRQ transactionRQ);
     // Mapea Transaction a TransactionRS
+    @Mapping(source = "auditData.createdAt", target = "dateOfTransaction")
     TransactionRS toTransactionRSOfTransaction(Transaction transaction);
 
 }

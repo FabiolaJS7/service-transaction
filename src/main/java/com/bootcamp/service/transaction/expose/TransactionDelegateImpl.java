@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ServerWebExchange;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Service
@@ -28,5 +29,11 @@ public class TransactionDelegateImpl implements ApiApiDelegate {
                 .onErrorResume(ex -> Mono.just(new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR)));
     }
 
+
+    @Override
+    public Mono<ResponseEntity<Flux<TransactionRS>>> findAll(ServerWebExchange exchange) {
+        log.info("-> Find All Transactions");
+        return Mono.just(ResponseEntity.ok(transactionService.getTransactions()));
+    }
 
 }

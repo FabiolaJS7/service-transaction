@@ -5,6 +5,7 @@ import com.bootcamp.service.transaction.model.TransactionRQ;
 import com.bootcamp.service.transaction.model.TransactionRS;
 import com.bootcamp.service.transaction.repository.TransactionRepository;
 import com.bootcamp.service.transaction.service.TransactionService;
+import com.bootcamp.service.transaction.util.AuditDataUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,7 +23,11 @@ public class TransactionServiceImpl implements TransactionService {
     public Mono<TransactionRS> createTransaction(Mono<TransactionRQ> transactionRQ) {
         return transactionRQ.map(TransactionMapper.INSTANCE::toTransactionOfTransactionRQ)
                 .doOnNext(subscription -> log.info("Getting transactionRQ to save"))
-                .flatMap(transaction -> transactionRepository.save(transaction))
+                .flatMap(transaction -> {
+                    //Agregando las fechas de creación para auditoría
+                    transaction.setAuditData(AuditDataUtil.create());
+                    return transactionRepository.save(transaction);
+                })
                 .doOnSuccess(transaction -> log.info("Transaction saved"))
                 .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
                 .onErrorResume(Mono::error);
@@ -30,6 +35,11 @@ public class TransactionServiceImpl implements TransactionService {
 
     @Override
     public Flux<TransactionRS> getTransactions() {
-        return Flux.empty();
+        return transactionRepository.findAll()
+                .doOnSubscribe(subscription -> log.info("Start getting transactions"))
+                .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
+                .doOnComplete(() -> log.info("End getting transactions"))
+                .doOnError(throwable -> log.error("Error getting transactions", throwable));
+
     }
 }
