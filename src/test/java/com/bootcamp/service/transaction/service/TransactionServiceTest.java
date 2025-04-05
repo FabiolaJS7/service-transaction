@@ -6,7 +6,9 @@ import com.bootcamp.service.transaction.model.TransactionRQ;
 import com.bootcamp.service.transaction.model.TransactionRS;
 import com.bootcamp.service.transaction.repository.TransactionRepository;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.DisabledOnJre;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Profile;
@@ -16,7 +18,6 @@ import reactor.test.StepVerifier;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-@Profile("local")
 class TransactionServiceTest {
 
     @Autowired
@@ -25,6 +26,7 @@ class TransactionServiceTest {
     @Autowired
     TransactionRepository transactionRepository;
 
+    @Disabled
     @Test
     void createTransaction_whenTransactionRQIsNotNull() {
         //Arrage

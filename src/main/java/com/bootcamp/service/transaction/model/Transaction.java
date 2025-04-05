@@ -19,5 +19,6 @@ public class Transaction {
     private String productId;
     private String productType;
     private Double amount;
+    private String result;
     private String movementType;
 }

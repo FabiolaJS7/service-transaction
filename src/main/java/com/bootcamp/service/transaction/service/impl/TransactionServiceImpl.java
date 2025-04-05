@@ -24,6 +24,6 @@ public class TransactionServiceImpl implements TransactionService {
                 .flatMap(transaction -> transactionRepository.save(transaction))
                 .doOnSuccess(transaction -> log.info("Transaction saved"))
                 .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
-                .doOnError(throwable -> log.error("Error saving transaction {}", throwable));
+                .onErrorResume(Mono::error);
     }
 }

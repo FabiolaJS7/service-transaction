@@ -114,6 +114,9 @@ components:
         movementType:
           type: string
           description: type of movement DEPOSIT , WITHDRAWAL
+        result:
+          type: string
+          description: indicate if transaction is success or not
 
     TransactionRS:
       type: object
