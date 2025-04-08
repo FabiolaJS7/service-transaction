@@ -55,4 +55,13 @@ public class TransactionServiceImpl implements TransactionService {
                 .doOnComplete(() -> log.info("End getting transaction by customer Id {}", customerId))
                 .doOnError(throwable -> log.error("Error getting transaction by customer Id", throwable));
     }
+
+    @Override
+    public Flux<TransactionRS> getTransactionsByProductId(String productId) {
+        return transactionRepository.findTransactionsByProductId(productId)
+                .doOnSubscribe(subscription -> log.info("Getting transactions by product id {}", productId))
+                .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
+                .doOnComplete(() -> log.info("End getting transactions by productId"))
+                .doOnError(throwable -> log.error("Error getting transactions by product id", throwable));
+    }
 }
