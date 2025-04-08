@@ -131,10 +131,14 @@ components:
         productType:
           type: string
           description: product type
-        amount:
+        amountMoved:
           type: number
           format: double
           description: amount to process
+        amount:
+          type: number
+          format: double
+          description: amount DEPOSIT or WITHDRAWAL without commision
         movementType:
           type: string
           description: type of movement DEPOSIT , WITHDRAWAL
@@ -157,10 +161,14 @@ components:
         productId:
           type: string
           description: product id
-        amount:
+        amountMoved:
           type: number
           format: double
           description: amount of transaction
+        amount:
+          type: number
+          format: double
+          description: amount DEPOSIT or WITHDRAWAL without commision
         result:
           type: string
           description: indicate if transaction was success or not

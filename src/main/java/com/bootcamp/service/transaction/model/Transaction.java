@@ -20,6 +20,7 @@ public class Transaction {
     private String customerId;
     private String productType;
     private Double amount;
+    private Double amountMoved;
     private String result;
     private String movementType;
     private AuditData auditData;

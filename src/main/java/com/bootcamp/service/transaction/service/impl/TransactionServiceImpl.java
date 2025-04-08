@@ -6,6 +6,7 @@ import com.bootcamp.service.transaction.model.TransactionRS;
 import com.bootcamp.service.transaction.repository.TransactionRepository;
 import com.bootcamp.service.transaction.service.TransactionService;
 import com.bootcamp.service.transaction.util.AuditDataUtil;
+import com.bootcamp.service.transaction.util.DateUtil;
 import com.bootcamp.service.transaction.util.JsonTransferUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,8 +47,10 @@ public class TransactionServiceImpl implements TransactionService {
 
     @Override
     public Flux<TransactionRS> getTransactionsByCustomerId(String customerId) {
-        return transactionRepository.findTransactionByCustomerId(customerId)
-                .doOnSubscribe(subscription -> log.info("Getting transaction by customer Id {}", customerId))
+        return transactionRepository.findByCustomerIdAndAuditDataCreatedAtBetween(customerId, DateUtil.getStartDate(),
+                        DateUtil.getEndDate())
+                .doOnSubscribe(subscription -> log.info("Getting transaction by customer Id {}",
+                        customerId))
                 .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
                 .doOnComplete(() -> log.info("End getting transaction by customer Id {}", customerId))
                 .doOnError(throwable -> log.error("Error getting transaction by customer Id", throwable));
