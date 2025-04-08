@@ -36,4 +36,11 @@ public class TransactionDelegateImpl implements ApiApiDelegate {
         return Mono.just(ResponseEntity.ok(transactionService.getTransactions()));
     }
 
+    @Override
+    public Mono<ResponseEntity<Flux<TransactionRS>>> getTransactionByCustomerId(String customerId,
+                                                                                 ServerWebExchange exchange) {
+        log.info("-> Get Transaction By Customer Id {}", customerId);
+        return Mono.just(ResponseEntity.ok(transactionService.getTransactionsByCustomerId(customerId)));
+    }
+
 }

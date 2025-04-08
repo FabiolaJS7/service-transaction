@@ -17,9 +17,11 @@ public class Transaction {
     @Id
     private String id;
     private String productId;
+    private String customerId;
     private String productType;
     private Double amount;
     private String result;
     private String movementType;
     private AuditData auditData;
+    private double commissionAmount;
 }

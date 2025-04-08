@@ -9,4 +9,5 @@ public interface TransactionService {
 
     Mono<TransactionRS> createTransaction(Mono<TransactionRQ> transactionRQ);
     Flux<TransactionRS> getTransactions();
+    Flux<TransactionRS> getTransactionsByCustomerId(String customerId);
 }

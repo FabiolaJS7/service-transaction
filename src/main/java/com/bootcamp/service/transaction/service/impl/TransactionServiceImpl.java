@@ -6,6 +6,7 @@ import com.bootcamp.service.transaction.model.TransactionRS;
 import com.bootcamp.service.transaction.repository.TransactionRepository;
 import com.bootcamp.service.transaction.service.TransactionService;
 import com.bootcamp.service.transaction.util.AuditDataUtil;
+import com.bootcamp.service.transaction.util.JsonTransferUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,7 +23,7 @@ public class TransactionServiceImpl implements TransactionService {
     @Override
     public Mono<TransactionRS> createTransaction(Mono<TransactionRQ> transactionRQ) {
         return transactionRQ.map(TransactionMapper.INSTANCE::toTransactionOfTransactionRQ)
-                .doOnNext(subscription -> log.info("Getting transactionRQ to save"))
+                .doOnNext(t -> log.info("Getting transactionRQ to save {}", JsonTransferUtil.objectToJson(t)))
                 .flatMap(transaction -> {
                     //Agregando las fechas de creación para auditoría
                     transaction.setAuditData(AuditDataUtil.create());
@@ -41,5 +42,14 @@ public class TransactionServiceImpl implements TransactionService {
                 .doOnComplete(() -> log.info("End getting transactions"))
                 .doOnError(throwable -> log.error("Error getting transactions", throwable));
 
+    }
+
+    @Override
+    public Flux<TransactionRS> getTransactionsByCustomerId(String customerId) {
+        return transactionRepository.findTransactionByCustomerId(customerId)
+                .doOnSubscribe(subscription -> log.info("Getting transaction by customer Id {}", customerId))
+                .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
+                .doOnComplete(() -> log.info("End getting transaction by customer Id {}", customerId))
+                .doOnError(throwable -> log.error("Error getting transaction by customer Id", throwable));
     }
 }

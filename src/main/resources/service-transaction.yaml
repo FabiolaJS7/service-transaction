@@ -96,11 +96,35 @@ paths:
           description: Successfull deleted
         '404':
           description: Transaction not found to delete
+  /api/transactions/customer/{customerId}:
+    get:
+      summary: Getting transaction by customerId
+      operationId: getTransactionByCustomerId
+      parameters:
+        - name: customerId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TransactionRS"
+        '404':
+          description: Product not found
 components:
   schemas:
     TransactionRQ:
       type: object
       properties:
+        customerId:
+          type: string
+          description: customer id
         productId:
           type: string
           description: product id
@@ -117,7 +141,10 @@ components:
         result:
           type: string
           description: indicate if transaction is success or not
-
+        commissionAmount:
+          type: number
+          format: double
+          description: commision amount for transaction
     TransactionRS:
       type: object
       properties:
@@ -143,6 +170,13 @@ components:
         observation:
           type: string
           description: observations
+        commissionAmount:
+          type: number
+          format: double
+          description: commission amount for transaction
+        customerId:
+          type: string
+          description: customer id
         dateOfTransaction:
           type: string
           format: date
