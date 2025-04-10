@@ -4,6 +4,7 @@ import com.bootcamp.service.transaction.mapper.TransactionMapper;
 import com.bootcamp.service.transaction.model.TransactionRQ;
 import com.bootcamp.service.transaction.model.TransactionRS;
 import com.bootcamp.service.transaction.repository.TransactionRepository;
+import com.bootcamp.service.transaction.service.CorrelativeService;
 import com.bootcamp.service.transaction.service.TransactionService;
 import com.bootcamp.service.transaction.util.AuditDataUtil;
 import com.bootcamp.service.transaction.util.DateUtil;
@@ -20,16 +21,22 @@ public class TransactionServiceImpl implements TransactionService {
 
     @Autowired
     TransactionRepository transactionRepository;
+    @Autowired
+    CorrelativeService correlativeService;
 
     @Override
     public Mono<TransactionRS> createTransaction(Mono<TransactionRQ> transactionRQ) {
         return transactionRQ.map(TransactionMapper.INSTANCE::toTransactionOfTransactionRQ)
                 .doOnNext(t -> log.info("Getting transactionRQ to save {}", JsonTransferUtil.objectToJson(t)))
-                .flatMap(transaction -> {
-                    //Agregando las fechas de creación para auditoría
-                    transaction.setAuditData(AuditDataUtil.create());
-                    return transactionRepository.save(transaction);
-                })
+                .flatMap(transaction ->
+                        correlativeService.getCorrelativeTransactionNumber()
+                            .map(integer -> {
+                                transaction.setTransactionNumber(integer);
+                                transaction.setAuditData(AuditDataUtil.create());
+                                return transaction;
+                            })
+                )
+                .flatMap(transaction -> transactionRepository.save(transaction))
                 .doOnSuccess(transaction -> log.info("Transaction saved"))
                 .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
                 .onErrorResume(Mono::error);
