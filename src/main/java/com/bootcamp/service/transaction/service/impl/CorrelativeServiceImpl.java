@@ -1,6 +1,5 @@
 package com.bootcamp.service.transaction.service.impl;
 
-import com.bootcamp.service.transaction.model.Transaction;
 import com.bootcamp.service.transaction.repository.TransactionRepository;
 import com.bootcamp.service.transaction.service.CorrelativeService;
 import lombok.AllArgsConstructor;
@@ -18,9 +17,10 @@ public class CorrelativeServiceImpl implements CorrelativeService {
     @Override
     public Mono<Integer> getCorrelativeTransactionNumber() {
         return transactionRepository.findTopByOrderByTransactionNumberDesc()
+                .doOnSubscribe(subscription -> log.info("Get correlative transcation."))
                 .map(transaction -> transaction.getTransactionNumber() + 1)
                 .doOnSuccess(transactionNumber -> log.info("Getting correlative transaction number {}", transactionNumber))
-                .onErrorReturn(1)
+                .defaultIfEmpty(1)
                 .doOnError(throwable -> log.error("Error getting correlative transaction number", throwable));
     }
 }

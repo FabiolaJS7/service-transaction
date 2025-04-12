@@ -164,6 +164,8 @@ components:
         result:
           type: string
           description: indicate if transaction is success or not
+        observation:
+          type: string
         commissionAmount:
           type: number
           format: double

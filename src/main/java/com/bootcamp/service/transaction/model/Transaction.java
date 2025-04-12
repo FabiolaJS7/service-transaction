@@ -23,6 +23,7 @@ public class Transaction {
     private Double amount;
     private Double amountMoved;
     private String result;
+    private String observation;
     private String movementType;
     private AuditData auditData;
     private double commissionAmount;
