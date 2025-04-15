@@ -15,4 +15,5 @@ public interface TransactionRepository extends ReactiveMongoRepository<Transacti
     Flux<Transaction> findByCustomerIdAndAuditDataCreatedAtBetween(String customerId, Date startDate, Date endDate);
     Flux<Transaction> findTransactionsByProductId(String productId);
     Mono<Transaction> findTopByOrderByTransactionNumberDesc();
+    Flux<Transaction> findTransactionsByProductIdAndAuditDataCreatedAtBetween(String productId, Date startDate, Date endDate);
 }

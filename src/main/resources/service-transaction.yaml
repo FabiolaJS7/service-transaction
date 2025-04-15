@@ -127,6 +127,22 @@ paths:
           required: true
           schema:
             type: string
+        - name: startDate
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+            example: "2025-03-01"
+            description: Start date for filtering transactions
+        - name: endDate
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+            example: "2025-03-31"
+            description: End date for filtering transactions
       responses:
         '200':
           description: Success

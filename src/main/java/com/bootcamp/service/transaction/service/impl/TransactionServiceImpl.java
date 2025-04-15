@@ -15,6 +15,10 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
+
 @Service
 @Slf4j
 public class TransactionServiceImpl implements TransactionService {
@@ -64,11 +68,25 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     @Override
-    public Flux<TransactionRS> getTransactionsByProductId(String productId) {
-        return transactionRepository.findTransactionsByProductId(productId)
-                .doOnSubscribe(subscription -> log.info("Getting transactions by product id {}", productId))
-                .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
-                .doOnComplete(() -> log.info("End getting transactions by productId"))
-                .doOnError(throwable -> log.error("Error getting transactions by product id", throwable));
+    public Flux<TransactionRS> getTransactionsByProductIdAndDates(String productId, LocalDate startDate, LocalDate endDate) {
+
+        if (startDate != null && endDate != null) {
+            log.info("Getting transactions by productid {}, startDate {}, endDate {}", productId, startDate, endDate);
+            return transactionRepository
+                    .findTransactionsByProductIdAndAuditDataCreatedAtBetween(productId,
+                            Date.from(startDate.atStartOfDay(ZoneId.systemDefault()).toInstant()),
+                            Date.from(endDate.atStartOfDay(ZoneId.systemDefault()).toInstant()))
+                    .doOnSubscribe(subscription -> log.info("Getting transactions by product {}, between {} and {}", productId, startDate, endDate))
+                    .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
+                    .doOnComplete(() -> log.info("End getting transactions by product {}, between {}", productId, startDate))
+                    .doOnError(throwable -> log.error("Error getting transactions by product {}", productId, throwable));
+        } else {
+            return transactionRepository.findTransactionsByProductId(productId)
+                    .doOnSubscribe(subscription -> log.info("Getting transactions by product id {}", productId))
+                    .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
+                    .doOnComplete(() -> log.info("End getting transactions by productId"))
+                    .doOnError(throwable -> log.error("Error getting transactions by product id", throwable));
+        }
+
     }
 }

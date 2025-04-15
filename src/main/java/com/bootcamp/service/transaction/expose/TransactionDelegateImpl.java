@@ -13,6 +13,8 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.time.LocalDate;
+
 @Service
 @AllArgsConstructor
 @Slf4j
@@ -45,10 +47,11 @@ public class TransactionDelegateImpl implements ApiApiDelegate {
 
     @Override
     public Mono<ResponseEntity<Flux<TransactionRS>>> getTransactionsByProductId(String productId,
+                                                                                 LocalDate startDate,
+                                                                                 LocalDate endDate,
                                                                                  ServerWebExchange exchange) {
         log.info("-> Getting transactions by product Id");
-        return Mono.just(ResponseEntity.ok(transactionService.getTransactionsByProductId(productId)));
-
+        return Mono.just(ResponseEntity.ok(transactionService.getTransactionsByProductIdAndDates(productId, startDate, endDate)));
     }
 
 }
