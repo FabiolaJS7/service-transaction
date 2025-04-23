@@ -4,6 +4,7 @@ import com.bootcamp.service.transaction.mapper.TransactionMapper;
 import com.bootcamp.service.transaction.model.TransactionRQ;
 import com.bootcamp.service.transaction.model.TransactionRS;
 import com.bootcamp.service.transaction.repository.TransactionRepository;
+import com.bootcamp.service.transaction.service.CacheService;
 import com.bootcamp.service.transaction.service.CorrelativeService;
 import com.bootcamp.service.transaction.service.TransactionService;
 import com.bootcamp.service.transaction.util.AuditDataUtil;
@@ -18,6 +19,7 @@ import reactor.core.publisher.Mono;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Date;
+import java.util.List;
 
 @Service
 @Slf4j
@@ -27,6 +29,8 @@ public class TransactionServiceImpl implements TransactionService {
     TransactionRepository transactionRepository;
     @Autowired
     CorrelativeService correlativeService;
+    @Autowired
+    CacheService cacheService;
 
     @Override
     public Mono<TransactionRS> createTransaction(Mono<TransactionRQ> transactionRQ) {
@@ -48,9 +52,27 @@ public class TransactionServiceImpl implements TransactionService {
 
     @Override
     public Flux<TransactionRS> getTransactions() {
-        return transactionRepository.findAll()
-                .doOnSubscribe(subscription -> log.info("Start getting transactions"))
-                .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
+        String cacheKey = "allTransactionss";
+
+        // Intentar obtener las transacciones desde el caché
+        return cacheService.get(cacheKey)
+                .flatMapMany(cachedTransactions -> {
+                    // Si las transacciones están en el caché, devolverlas
+                    log.info("Transactions retrieved from cache {}", JsonTransferUtil.objectToJson(cachedTransactions));
+                    return Flux.fromIterable((List<TransactionRS>) cachedTransactions);
+                })
+                .switchIfEmpty(
+                        // Si no están en el caché, obtenerlas de la base de datos
+                        transactionRepository.findAll()
+                                .doOnSubscribe(subscription -> log.info("Start getting transactions from database"))
+                                .map(TransactionMapper.INSTANCE::toTransactionRSOfTransaction)
+                                .collectList() // Convertir a lista para almacenarla en el caché
+                                .flatMapMany(transactions -> {
+                                    // Guardar las transacciones en el caché
+                                    return cacheService.save(cacheKey, transactions)
+                                            .thenMany(Flux.fromIterable(transactions));
+                                })
+                )
                 .doOnComplete(() -> log.info("End getting transactions"))
                 .doOnError(throwable -> log.error("Error getting transactions", throwable));
 

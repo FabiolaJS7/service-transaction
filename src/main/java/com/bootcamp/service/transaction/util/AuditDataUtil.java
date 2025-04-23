@@ -14,8 +14,4 @@ public class AuditDataUtil {
         auditData.setUpdatedAt(new Date());
         return auditData;
     }
-
-    public static void update(AuditData auditData) {
-        auditData.setUpdatedAt(new Date());
-    }
 }
