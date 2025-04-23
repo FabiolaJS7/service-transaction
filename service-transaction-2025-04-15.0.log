@@ -1,0 +1,382 @@
+2025-04-15 08:13:57-435 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 08:18:57-552 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 08:23:57-566 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 08:28:57-584 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 08:33:57-680 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 08:38:57-700 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 08:43:57-709 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 08:47:23-910 [reactor-http-nio-5] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 08:47:24-096 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-15 and 2025-04-05 
+2025-04-15 08:47:24-221 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-15 
+2025-04-15 08:48:57-734 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 08:49:50-714 [reactor-http-nio-5] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 08:49:50-720 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-15 and 2025-04-05 
+2025-04-15 08:49:50-728 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-15 
+2025-04-15 08:50:09-033 [reactor-http-nio-5] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 08:50:09-039 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-15 and 2025-04-05 
+2025-04-15 08:50:09-045 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-15 
+2025-04-15 08:50:40-225 [reactor-http-nio-5] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 08:51:02-203 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-15 and 2025-04-05 
+2025-04-15 08:51:02-208 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-15 
+2025-04-15 08:51:25-678 [reactor-http-nio-5] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 08:51:55-199 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-15 and 2025-04-05 
+2025-04-15 08:51:55-205 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-15 
+2025-04-15 08:53:25-020 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final 
+2025-04-15 08:53:25-101 [main] INFO  c.b.s.t.ServiceTransactionApplication - Starting ServiceTransactionApplication using Java 17.0.12 with PID 36516 (C:\Users\mgarcsar\Documents\Bootcamp\etregables\service-transaction\target\classes started by mgarcsar in C:\Users\mgarcsar\Documents\Bootcamp\etregables\service-transaction) 
+2025-04-15 08:53:25-103 [main] INFO  c.b.s.t.ServiceTransactionApplication - The following 1 profile is active: "local" 
+2025-04-15 08:53:25-162 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888 
+2025-04-15 08:53:25-162 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=service-transaction, profiles=[default], label=null, version=4104587ecb7e0b9504677aded21c6c2d076b82cb, state= 
+2025-04-15 08:53:25-162 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888 
+2025-04-15 08:53:25-162 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=service-transaction, profiles=[local], label=null, version=4104587ecb7e0b9504677aded21c6c2d076b82cb, state= 
+2025-04-15 08:53:27-350 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode. 
+2025-04-15 08:53:27-695 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 330 ms. Found 1 Reactive MongoDB repository interface. 
+2025-04-15 08:53:28-063 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=06fcc311-65ab-3d5a-bfe0-3537b1c16752 
+2025-04-15 08:53:29-659 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.12+8-LTS-286"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@48d31d25, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@46188a89], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6f65a203, com.mongodb.Jep395RecordCodecProvider@1d0b447b, com.mongodb.KotlinCodecProvider@4de158ca]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@4f2fdf3d], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null} 
+2025-04-15 08:53:29-961 [cluster-ClusterId{value='67fe64d9e63db66f63acbec8', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=121086700, minRoundTripTimeNanos=0} 
+2025-04-15 08:53:32-825 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+2025-04-15 08:53:33-847 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate. 
+2025-04-15 08:53:33-950 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath. 
+2025-04-15 08:53:34-123 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING 
+2025-04-15 08:53:34-186 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1 
+2025-04-15 08:53:34-197 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 08:53:34-223 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false 
+2025-04-15 08:53:34-223 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null 
+2025-04-15 08:53:34-224 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false 
+2025-04-15 08:53:34-224 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false 
+2025-04-15 08:53:34-224 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true 
+2025-04-15 08:53:34-225 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true 
+2025-04-15 08:53:34-225 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server 
+2025-04-15 08:53:34-931 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200 
+2025-04-15 08:53:34-938 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30 
+2025-04-15 08:53:34-944 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4 
+2025-04-15 08:53:34-948 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1744725214947 with initial instances count: 3 
+2025-04-15 08:53:34-956 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SERVICE-TRANSACTION with eureka with status UP 
+2025-04-15 08:53:34-957 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1744725214957, current=UP, previous=STARTING] 
+2025-04-15 08:53:34-962 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SERVICE-TRANSACTION/NTTD-FSXB5M3:service-transaction:8484: registering service... 
+2025-04-15 08:53:35-082 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SERVICE-TRANSACTION/NTTD-FSXB5M3:service-transaction:8484 - registration status: 204 
+2025-04-15 08:53:35-107 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8484 (http) 
+2025-04-15 08:53:35-110 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8484 
+2025-04-15 08:53:35-847 [main] INFO  c.b.s.t.ServiceTransactionApplication - Started ServiceTransactionApplication in 15.909 seconds (process running for 18.092) 
+2025-04-15 08:58:34-239 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:03:34-247 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:08:34-255 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:13:34-270 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:18:34-288 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:23:34-299 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:28:34-314 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:33:34-330 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:34:48-379 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final 
+2025-04-15 09:34:48-437 [main] INFO  c.b.s.t.ServiceTransactionApplication - Starting ServiceTransactionApplication using Java 17.0.12 with PID 29912 (C:\Users\mgarcsar\Documents\Bootcamp\etregables\service-transaction\target\classes started by mgarcsar in C:\Users\mgarcsar\Documents\Bootcamp\etregables\service-transaction) 
+2025-04-15 09:34:48-438 [main] INFO  c.b.s.t.ServiceTransactionApplication - The following 1 profile is active: "local" 
+2025-04-15 09:34:48-484 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888 
+2025-04-15 09:34:48-485 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=service-transaction, profiles=[default], label=null, version=4104587ecb7e0b9504677aded21c6c2d076b82cb, state= 
+2025-04-15 09:34:48-485 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888 
+2025-04-15 09:34:48-485 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=service-transaction, profiles=[local], label=null, version=4104587ecb7e0b9504677aded21c6c2d076b82cb, state= 
+2025-04-15 09:34:49-887 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode. 
+2025-04-15 09:34:50-044 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 149 ms. Found 1 Reactive MongoDB repository interface. 
+2025-04-15 09:34:50-208 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=06fcc311-65ab-3d5a-bfe0-3537b1c16752 
+2025-04-15 09:34:50-932 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.12+8-LTS-286"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@26d24d7a, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@5a78b52b], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4bab78ce, com.mongodb.Jep395RecordCodecProvider@42ffbab6, com.mongodb.KotlinCodecProvider@7672960e]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@69bca406], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null} 
+2025-04-15 09:34:51-144 [cluster-ClusterId{value='67fe6e8a3f01570c258707e9', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=102802200, minRoundTripTimeNanos=0} 
+2025-04-15 09:34:52-833 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+2025-04-15 09:34:53-736 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate. 
+2025-04-15 09:34:53-796 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath. 
+2025-04-15 09:34:53-885 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING 
+2025-04-15 09:34:53-915 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1 
+2025-04-15 09:34:53-921 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:34:53-936 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false 
+2025-04-15 09:34:53-936 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null 
+2025-04-15 09:34:53-936 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false 
+2025-04-15 09:34:53-936 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false 
+2025-04-15 09:34:53-936 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true 
+2025-04-15 09:34:53-936 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true 
+2025-04-15 09:34:53-937 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server 
+2025-04-15 09:34:54-413 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200 
+2025-04-15 09:34:54-416 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30 
+2025-04-15 09:34:54-419 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4 
+2025-04-15 09:34:54-421 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1744727694420 with initial instances count: 3 
+2025-04-15 09:34:54-426 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SERVICE-TRANSACTION with eureka with status UP 
+2025-04-15 09:34:54-426 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1744727694426, current=UP, previous=STARTING] 
+2025-04-15 09:34:54-429 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SERVICE-TRANSACTION/NTTD-FSXB5M3:service-transaction:8484: registering service... 
+2025-04-15 09:34:54-484 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SERVICE-TRANSACTION/NTTD-FSXB5M3:service-transaction:8484 - registration status: 204 
+2025-04-15 09:34:54-503 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8484 (http) 
+2025-04-15 09:34:54-505 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8484 
+2025-04-15 09:34:54-873 [main] INFO  c.b.s.t.ServiceTransactionApplication - Started ServiceTransactionApplication in 10.613 seconds (process running for 16.112) 
+2025-04-15 09:35:21-828 [reactor-http-nio-2] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 09:35:25-091 [reactor-http-nio-2] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by productid 67fabf94ec8287214a828c9c, startDate 2025-04-15, endDate 2025-04-05 
+2025-04-15 09:35:51-877 [reactor-http-nio-2] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-15 and 2025-04-05 
+2025-04-15 09:35:51-931 [reactor-http-nio-2] WARN  reactor.netty.channel.FluxReceive - [6afc20c0-1, L:/127.0.0.1:8484 - R:/127.0.0.1:65022] An exception has been observed post termination, use DEBUG level to see the full stack: java.net.SocketException: Connection reset 
+2025-04-15 09:36:56-213 [reactor-http-nio-3] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 09:36:57-996 [reactor-http-nio-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by productid 67fabf94ec8287214a828c9c, startDate 2025-04-05, endDate 2025-04-15 
+2025-04-15 09:36:59-335 [reactor-http-nio-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-05 and 2025-04-15 
+2025-04-15 09:36:59-406 [reactor-http-nio-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-05 
+2025-04-15 09:39:53-949 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:44:53-956 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:49:53-964 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:52:26-411 [reactor-http-nio-4] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 09:52:26-468 [reactor-http-nio-4] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 09:52:26-521 [reactor-http-nio-4] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 09:54:53-966 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 09:59:53-982 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 10:04:53-990 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 10:09:54-000 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 10:14:16-728 [reactor-http-nio-5] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 10:14:16-773 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 10:14:16-849 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 10:14:54-014 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 10:19:54-026 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 10:22:21-674 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application SERVICE-TRANSACTION with eureka with status DOWN 
+2025-04-15 10:22:21-675 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1744730541675, current=DOWN, previous=UP] 
+2025-04-15 10:22:21-675 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SERVICE-TRANSACTION/NTTD-FSXB5M3:service-transaction:8484: registering service... 
+2025-04-15 10:22:21-696 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SERVICE-TRANSACTION/NTTD-FSXB5M3:service-transaction:8484 - registration status: 204 
+2025-04-15 10:22:21-724 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-04-15 10:22:21-740 [netty-shutdown] INFO  o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete 
+2025-04-15 10:24:13-115 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final 
+2025-04-15 10:24:13-165 [main] INFO  c.b.s.t.ServiceTransactionApplication - Starting ServiceTransactionApplication using Java 17.0.12 with PID 24176 (C:\Users\mgarcsar\Documents\Bootcamp\etregables\service-transaction\target\classes started by mgarcsar in C:\Users\mgarcsar\Documents\Bootcamp\etregables\service-transaction) 
+2025-04-15 10:24:13-166 [main] INFO  c.b.s.t.ServiceTransactionApplication - The following 1 profile is active: "local" 
+2025-04-15 10:24:13-208 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888 
+2025-04-15 10:24:13-209 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=service-transaction, profiles=[default], label=null, version=4104587ecb7e0b9504677aded21c6c2d076b82cb, state= 
+2025-04-15 10:24:13-209 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888 
+2025-04-15 10:24:13-209 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=service-transaction, profiles=[local], label=null, version=4104587ecb7e0b9504677aded21c6c2d076b82cb, state= 
+2025-04-15 10:24:14-499 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode. 
+2025-04-15 10:24:14-766 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 255 ms. Found 1 Reactive MongoDB repository interface. 
+2025-04-15 10:24:15-000 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=06fcc311-65ab-3d5a-bfe0-3537b1c16752 
+2025-04-15 10:24:15-921 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.12+8-LTS-286"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@6b64429e, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@48aa0813], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@45849604, com.mongodb.Jep395RecordCodecProvider@6cbbfe29, com.mongodb.KotlinCodecProvider@25823192]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@3df04fa1], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null} 
+2025-04-15 10:24:16-089 [cluster-ClusterId{value='67fe7a1ff912f50420d9ba22', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=61450100, minRoundTripTimeNanos=0} 
+2025-04-15 10:24:17-702 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+2025-04-15 10:24:18-413 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate. 
+2025-04-15 10:24:18-507 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath. 
+2025-04-15 10:24:18-648 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING 
+2025-04-15 10:24:18-691 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1 
+2025-04-15 10:24:18-698 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 10:24:18-716 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false 
+2025-04-15 10:24:18-717 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null 
+2025-04-15 10:24:18-717 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false 
+2025-04-15 10:24:18-717 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false 
+2025-04-15 10:24:18-717 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true 
+2025-04-15 10:24:18-717 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true 
+2025-04-15 10:24:18-718 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server 
+2025-04-15 10:24:19-626 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200 
+2025-04-15 10:24:19-648 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30 
+2025-04-15 10:24:19-660 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4 
+2025-04-15 10:24:19-675 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1744730659674 with initial instances count: 2 
+2025-04-15 10:24:19-756 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SERVICE-TRANSACTION with eureka with status UP 
+2025-04-15 10:24:19-758 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1744730659758, current=UP, previous=STARTING] 
+2025-04-15 10:24:19-765 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SERVICE-TRANSACTION/NTTD-FSXB5M3:service-transaction:8484: registering service... 
+2025-04-15 10:24:19-926 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SERVICE-TRANSACTION/NTTD-FSXB5M3:service-transaction:8484 - registration status: 204 
+2025-04-15 10:24:20-075 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8484 (http) 
+2025-04-15 10:24:20-080 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8484 
+2025-04-15 10:24:20-601 [main] INFO  c.b.s.t.ServiceTransactionApplication - Started ServiceTransactionApplication in 11.03 seconds (process running for 14.128) 
+2025-04-15 10:29:18-739 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 10:34:18-749 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 10:39:18-767 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 10:44:18-776 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 10:49:18-779 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 10:52:30-144 [reactor-http-nio-2] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 10:52:30-308 [reactor-http-nio-2] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 10:52:30-596 [reactor-http-nio-2] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 10:54:18-785 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 10:58:27-146 [reactor-http-nio-3] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 10:58:27-149 [reactor-http-nio-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 10:58:27-158 [reactor-http-nio-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 10:59:18-801 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:03:38-915 [reactor-http-nio-4] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 11:03:38-919 [reactor-http-nio-4] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 11:03:38-961 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 11:04:13-183 [reactor-http-nio-5] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 11:04:13-185 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 11:04:13-191 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 11:04:18-808 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:04:56-826 [reactor-http-nio-5] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 11:04:56-828 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 11:04:56-834 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 11:07:57-638 [reactor-http-nio-6] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 11:07:57-640 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 11:07:57-656 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 11:09:18-821 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:09:51-232 [reactor-http-nio-7] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 11:09:51-235 [reactor-http-nio-7] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 11:09:51-240 [reactor-http-nio-7] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 11:14:18-831 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:16:12-237 [reactor-http-nio-8] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 11:16:12-243 [reactor-http-nio-8] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 11:16:12-251 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 11:19:18-834 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:23:30-856 [reactor-http-nio-1] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 11:23:30-858 [reactor-http-nio-1] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 11:23:30-869 [reactor-http-nio-1] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 11:24:18-851 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:29:18-861 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:34:17-839 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:34:44-229 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final 
+2025-04-15 11:34:44-335 [main] INFO  c.b.s.t.ServiceTransactionApplication - Starting ServiceTransactionApplication using Java 17.0.12 with PID 29848 (C:\Users\mgarcsar\Documents\Bootcamp\etregables\service-transaction\target\classes started by mgarcsar in C:\Users\mgarcsar\Documents\Bootcamp\etregables\service-transaction) 
+2025-04-15 11:34:44-337 [main] INFO  c.b.s.t.ServiceTransactionApplication - The following 1 profile is active: "local" 
+2025-04-15 11:34:44-406 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888 
+2025-04-15 11:34:44-406 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=service-transaction, profiles=[default], label=null, version=4104587ecb7e0b9504677aded21c6c2d076b82cb, state= 
+2025-04-15 11:34:44-406 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888 
+2025-04-15 11:34:44-406 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=service-transaction, profiles=[local], label=null, version=4104587ecb7e0b9504677aded21c6c2d076b82cb, state= 
+2025-04-15 11:34:46-419 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode. 
+2025-04-15 11:34:46-665 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 237 ms. Found 1 Reactive MongoDB repository interface. 
+2025-04-15 11:34:46-920 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=06fcc311-65ab-3d5a-bfe0-3537b1c16752 
+2025-04-15 11:34:47-714 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.12+8-LTS-286"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@d180961, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@4af7ac25], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@d978ab9, com.mongodb.Jep395RecordCodecProvider@3cf06a01, com.mongodb.KotlinCodecProvider@71ee2fff]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@68f2363], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null} 
+2025-04-15 11:34:47-838 [cluster-ClusterId{value='67fe8aa749ffa149dadde264', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=46545500, minRoundTripTimeNanos=0} 
+2025-04-15 11:34:49-261 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+2025-04-15 11:34:49-716 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate. 
+2025-04-15 11:34:49-760 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath. 
+2025-04-15 11:34:49-859 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING 
+2025-04-15 11:34:49-884 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1 
+2025-04-15 11:34:49-890 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:34:49-902 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false 
+2025-04-15 11:34:49-902 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null 
+2025-04-15 11:34:49-902 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false 
+2025-04-15 11:34:49-902 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false 
+2025-04-15 11:34:49-902 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true 
+2025-04-15 11:34:49-902 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true 
+2025-04-15 11:34:49-902 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server 
+2025-04-15 11:34:50-227 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200 
+2025-04-15 11:34:50-230 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30 
+2025-04-15 11:34:50-234 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4 
+2025-04-15 11:34:50-236 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1744734890236 with initial instances count: 4 
+2025-04-15 11:34:50-240 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SERVICE-TRANSACTION with eureka with status UP 
+2025-04-15 11:34:50-241 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1744734890241, current=UP, previous=STARTING] 
+2025-04-15 11:34:50-243 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SERVICE-TRANSACTION/NTTD-FSXB5M3:service-transaction:8484: registering service... 
+2025-04-15 11:34:50-290 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SERVICE-TRANSACTION/NTTD-FSXB5M3:service-transaction:8484 - registration status: 204 
+2025-04-15 11:34:50-315 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8484 (http) 
+2025-04-15 11:34:50-318 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8484 
+2025-04-15 11:34:50-689 [main] INFO  c.b.s.t.ServiceTransactionApplication - Started ServiceTransactionApplication in 11.036 seconds (process running for 14.172) 
+2025-04-15 11:39:49-913 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:44:49-927 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:49:49-931 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:54:49-932 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 11:59:49-947 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 12:04:49-951 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 12:09:49-954 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 12:14:49-961 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 12:19:49-974 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 12:24:49-980 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 12:29:49-982 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 12:34:49-998 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 12:39:50-004 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 12:44:50-016 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 12:49:50-028 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 12:54:50-033 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 12:59:50-048 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 13:04:50-063 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 13:09:50-070 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 13:14:50-081 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 13:19:50-094 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 13:24:50-111 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 13:29:50-127 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 13:34:50-134 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 13:39:50-137 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 13:44:50-159 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 13:49:50-164 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 13:54:50-180 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 13:59:50-192 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 14:04:50-204 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 14:09:50-216 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 14:28:48-679 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 14:33:48-688 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 14:38:48-699 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 14:43:48-705 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 14:48:48-706 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 14:53:48-722 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 14:58:48-735 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 15:03:48-749 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 15:08:48-759 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 15:13:48-767 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 15:18:48-778 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 15:23:48-785 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 15:28:48-797 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 15:33:48-814 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 15:38:48-830 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 15:43:48-838 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 15:48:48-852 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 15:53:48-861 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 15:58:48-886 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 16:03:48-902 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 16:08:48-918 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 16:10:20-963 [reactor-http-nio-2] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 16:10:21-271 [reactor-http-nio-2] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fec9835c652468edc457d0 
+2025-04-15 16:10:21-735 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 16:10:22-182 [reactor-http-nio-2] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Create Transaction 
+2025-04-15 16:10:22-274 [reactor-http-nio-2] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactionRQ to save {"transactionNumber":0,"productId":"67fac6f73d4d5b2abeb89bea","amount":20.0,"amountMoved":20.0,"result":"true","observation":"Deposited from 67fec9835c652468edc457d0","movementType":"DEPOSIT","commissionAmount":0.0} 
+2025-04-15 16:10:22-288 [reactor-http-nio-2] INFO  c.b.s.t.s.i.CorrelativeServiceImpl - Get correlative transcation. 
+2025-04-15 16:10:22-423 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.CorrelativeServiceImpl - Getting correlative transaction number 72 
+2025-04-15 16:10:22-578 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - Transaction saved 
+2025-04-15 16:10:22-628 [reactor-http-nio-3] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Create Transaction 
+2025-04-15 16:10:22-632 [reactor-http-nio-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactionRQ to save {"transactionNumber":0,"productId":"67fec9835c652468edc457d0","customerId":"67fec9835c652468edc457d0","amount":20.0,"amountMoved":20.0,"result":"true","observation":"*","movementType":"TRANSFER","commissionAmount":0.0} 
+2025-04-15 16:10:22-634 [reactor-http-nio-3] INFO  c.b.s.t.s.i.CorrelativeServiceImpl - Get correlative transcation. 
+2025-04-15 16:10:22-642 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.CorrelativeServiceImpl - Getting correlative transaction number 73 
+2025-04-15 16:10:22-650 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - Transaction saved 
+2025-04-15 16:13:48-934 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 16:18:48-936 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 16:23:48-944 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 16:28:48-962 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 16:33:48-970 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 16:38:48-994 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 16:43:21-521 [reactor-http-nio-4] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 16:43:21-599 [reactor-http-nio-4] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fec9835c652468edc457d0 
+2025-04-15 16:43:21-733 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 16:43:49-002 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 16:45:11-572 [reactor-http-nio-4] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 16:45:11-577 [reactor-http-nio-4] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fec9835c652468edc457d0 
+2025-04-15 16:45:11-586 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 16:48:49-008 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 16:49:30-925 [reactor-http-nio-5] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 16:49:30-927 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fec9835c652468edc457d0 
+2025-04-15 16:49:30-934 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 16:53:49-017 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 16:55:33-963 [reactor-http-nio-5] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 16:55:33-968 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67f9cc806e374c0902dcdb73 
+2025-04-15 16:55:33-975 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 16:55:58-098 [reactor-http-nio-5] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 16:55:58-101 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67f9cd80200fc270ce30e284 
+2025-04-15 16:55:58-312 [reactor-http-nio-5] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 16:58:49-029 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 17:01:18-881 [reactor-http-nio-6] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 17:01:18-907 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67f9cd80200fc270ce30e284 
+2025-04-15 17:01:18-947 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 17:02:28-834 [reactor-http-nio-6] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 17:02:28-835 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by productid 67f9cd80200fc270ce30e284, startDate 2025-01-01, endDate 2025-04-20 
+2025-04-15 17:02:28-899 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67f9cd80200fc270ce30e284, between 2025-01-01 and 2025-04-20 
+2025-04-15 17:02:28-913 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by product 67f9cd80200fc270ce30e284, between 2025-01-01 
+2025-04-15 17:03:04-351 [reactor-http-nio-6] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 17:03:04-351 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by productid 67f9e1c9fe034d395c6d23b3, startDate 2025-01-01, endDate 2025-04-20 
+2025-04-15 17:03:04-355 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67f9e1c9fe034d395c6d23b3, between 2025-01-01 and 2025-04-20 
+2025-04-15 17:03:04-363 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by product 67f9e1c9fe034d395c6d23b3, between 2025-01-01 
+2025-04-15 17:03:11-947 [reactor-http-nio-6] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 17:03:11-948 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by productid 67fabf94ec8287214a828c9c, startDate 2025-01-01, endDate 2025-04-20 
+2025-04-15 17:03:11-950 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67fabf94ec8287214a828c9c, between 2025-01-01 and 2025-04-20 
+2025-04-15 17:03:11-964 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by product 67fabf94ec8287214a828c9c, between 2025-01-01 
+2025-04-15 17:03:23-220 [reactor-http-nio-6] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 17:03:23-220 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by productid 67fabf94ec8287214a828c9c, startDate 2025-04-01, endDate 2025-04-12 
+2025-04-15 17:03:23-225 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-01 and 2025-04-12 
+2025-04-15 17:03:23-232 [nioEventLoopGroup-3-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by product 67fabf94ec8287214a828c9c, between 2025-04-01 
+2025-04-15 17:03:45-689 [reactor-http-nio-6] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 17:03:45-689 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by productid 67fabf94ec8287214a828c9c, startDate 2025-01-01, endDate 2025-04-30 
+2025-04-15 17:03:45-693 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67fabf94ec8287214a828c9c, between 2025-01-01 and 2025-04-30 
+2025-04-15 17:03:45-768 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by product 67fabf94ec8287214a828c9c, between 2025-01-01 
+2025-04-15 17:03:49-045 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 17:03:52-889 [reactor-http-nio-6] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 17:03:52-889 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by productid 67fabf94ec8287214a828c9c, startDate 2025-01-01, endDate 2025-04-13 
+2025-04-15 17:03:52-891 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product 67fabf94ec8287214a828c9c, between 2025-01-01 and 2025-04-13 
+2025-04-15 17:03:52-898 [reactor-http-nio-6] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by product 67fabf94ec8287214a828c9c, between 2025-01-01 
+2025-04-15 17:08:49-054 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 17:13:49-062 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 17:18:49-076 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 17:21:30-460 [reactor-http-nio-2] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 17:21:30-507 [reactor-http-nio-2] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 17:21:30-569 [reactor-http-nio-2] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 17:23:49-083 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 17:28:49-085 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 17:31:08-823 [reactor-http-nio-3] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 17:31:08-857 [reactor-http-nio-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 17:31:08-907 [reactor-http-nio-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 17:32:10-016 [reactor-http-nio-3] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 17:32:10-018 [reactor-http-nio-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 17:32:10-024 [reactor-http-nio-3] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 17:33:49-093 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
+2025-04-15 17:33:54-507 [reactor-http-nio-4] INFO  c.b.s.t.e.TransactionDelegateImpl - -> Getting transactions by product Id 
+2025-04-15 17:33:54-510 [reactor-http-nio-4] INFO  c.b.s.t.s.i.TransactionServiceImpl - Getting transactions by product id 67fabf94ec8287214a828c9c 
+2025-04-15 17:33:54-516 [reactor-http-nio-4] INFO  c.b.s.t.s.i.TransactionServiceImpl - End getting transactions by productId 
+2025-04-15 17:38:49-105 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration 
